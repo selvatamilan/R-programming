@@ -1,0 +1,26 @@
+# Function to find all prime numbers up to a given limit using the Sieve of Eratosthenes
+getPrimesSieve <- function(limit) {
+  # Create a boolean vector to represent whether each number is prime
+  is_prime <- rep(TRUE, limit)
+  is_prime[1] <- FALSE  # 1 is not a prime number
+  
+  # Iterate through the numbers up to the square root of the limit
+  for (i in 2:sqrt(limit)) {
+    if (is_prime[i]) {
+      # Mark multiples of the current prime as not prime
+      is_prime[i^2 : limit : i] <- FALSE
+    }
+  }
+  
+  # Return the vector of prime numbers
+  return(which(is_prime))
+}
+
+# Set the limit for prime numbers
+limit <- 50  # You can change this limit to any desired value
+
+# Get all prime numbers up to the specified limit
+prime_numbers <- getPrimesSieve(limit)
+
+# Display the result
+cat("Prime numbers up to", limit, "are:", prime_numbers, "\n")
