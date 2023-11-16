@@ -1,0 +1,26 @@
+# R program to take input from the user and display values
+
+# Function to get user input for name and age
+getUserInput <- function() {
+  cat("Enter your name: ")
+  name <- readline()
+  
+  cat("Enter your age: ")
+  age <- as.numeric(readline())
+  
+  return(list(name = name, age = age))
+}
+
+# Function to display user input values
+displayValues <- function(userInput) {
+  cat("\nUser Information:\n")
+  cat("Name: ", userInput$name, "\n")
+  cat("Age: ", userInput$age, "\n")
+}
+
+# Main program
+userInput <- getUserInput()
+displayValues(userInput)
+
+# Print R version
+cat("\nR Version: ", R.version.string, "\n")
