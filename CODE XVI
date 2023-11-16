@@ -1,0 +1,20 @@
+# Create a 5x4 matrix filled by rows
+matrix_rows <- matrix(1:20, nrow = 5, ncol = 4, byrow = TRUE)
+
+# Create a 3x3 matrix with labels filled by rows
+matrix_labels_rows <- matrix(letters[1:9], nrow = 3, ncol = 3, byrow = TRUE,
+                             dimnames = list(c("Row1", "Row2", "Row3"), c("Col1", "Col2", "Col3")))
+
+# Create a 2x2 matrix with labels filled by columns
+matrix_labels_columns <- matrix(letters[10:13], nrow = 2, ncol = 2, byrow = FALSE,
+                                dimnames = list(c("Row1", "Row2"), c("Col1", "Col2")))
+
+# Display the matrices
+cat("5x4 Matrix Filled by Rows:\n")
+print(matrix_rows)
+
+cat("\n3x3 Matrix with Labels Filled by Rows:\n")
+print(matrix_labels_rows)
+
+cat("\n2x2 Matrix with Labels Filled by Columns:\n")
+print(matrix_labels_columns)
