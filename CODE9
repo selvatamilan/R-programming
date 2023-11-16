@@ -1,0 +1,17 @@
+# Function to find factors of a given number
+findFactors <- function(number) {
+  factors <- c()
+  for (i in 1:number) {
+    if (number %% i == 0) {
+      factors <- c(factors, i)
+    }
+  }
+  return(factors)
+}
+
+# Example: Find factors of a specific number (e.g., 24)
+numberToFindFactors <- 24
+factorsOfNumber <- findFactors(numberToFindFactors)
+
+# Display the result
+cat("Factors of", numberToFindFactors, "are:", factorsOfNumber, "\n")
