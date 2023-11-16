@@ -1,0 +1,19 @@
+# Create a sequence of numbers from 20 to 50
+sequence_20_to_50 <- 20:50
+
+# Calculate the mean of numbers from 20 to 60
+mean_20_to_60 <- mean(20:60)
+
+# Calculate the sum of numbers from 51 to 91
+sum_51_to_91 <- sum(51:91)
+
+# Display the results with explanation
+cat("Sequence of numbers from 20 to 50: ", sequence_20_to_50, "\n\n")
+
+cat("Mean of numbers from 20 to 60: ", mean_20_to_60, "\n")
+cat("Explanation: Mean is the average of all numbers in the given range (20 to 60).\n")
+cat("Mean = (20 + 21 + ... + 60) / (Number of elements)\n\n")
+
+cat("Sum of numbers from 51 to 91: ", sum_51_to_91, "\n")
+cat("Explanation: Sum is the total of all numbers in the given range (51 to 91).\n")
+cat("Sum = 51 + 52 + ... + 91\n")
