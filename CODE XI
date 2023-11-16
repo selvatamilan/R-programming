@@ -1,0 +1,26 @@
+# Function to get unique elements from a string
+getUniqueElementsFromString <- function(input_string) {
+  unique_elements <- unique(strsplit(input_string, '')[[1]])
+  return(unique_elements)
+}
+
+# Function to get unique numbers from a vector
+getUniqueNumbersFromVector <- function(input_vector) {
+  unique_numbers <- unique(input_vector)
+  return(unique_numbers)
+}
+
+# Example: Get unique elements from a string
+example_string <- "hello world"
+unique_elements_string <- getUniqueElementsFromString(example_string)
+
+# Example: Get unique numbers from a vector
+example_vector <- c(1, 2, 3, 2, 4, 1, 5, 3)
+unique_numbers_vector <- getUniqueNumbersFromVector(example_vector)
+
+# Display the results
+cat("Original String:", example_string, "\n")
+cat("Unique Elements from String:", unique_elements_string, "\n\n")
+
+cat("Original Vector:", example_vector, "\n")
+cat("Unique Numbers from Vector:", unique_numbers_vector, "\n")
