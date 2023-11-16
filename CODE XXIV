@@ -1,0 +1,13 @@
+# Given vector of elements
+given_vector <- c(2, 4, 6, 8, 10)
+
+# Compute sum, mean, and product
+sum_result <- sum(given_vector)
+mean_result <- mean(given_vector)
+product_result <- prod(given_vector)
+
+# Display the results
+cat("Given Vector:", given_vector, "\n")
+cat("Sum:", sum_result, "\n")
+cat("Mean:", mean_result, "\n")
+cat("Product:", product_result, "\n")
