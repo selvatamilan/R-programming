@@ -1,0 +1,15 @@
+# Create heterogeneous data
+character_vector <- c("apple", "banana", "orange")
+numeric_vector <- c(1.5, 2.3, 3.8)
+logical_vector <- c(TRUE, FALSE, TRUE)
+
+# Create a list with heterogeneous data
+heterogeneous_list <- list(
+  characters = character_vector,
+  numbers = numeric_vector,
+  logicals = logical_vector
+)
+
+# Display the content of the list
+cat("Heterogeneous List:\n")
+print(heterogeneous_list)
