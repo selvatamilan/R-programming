@@ -1,0 +1,15 @@
+# Create a vector of marks for five subjects
+subject_marks <- c(85, 92, 78, 88, 95)
+
+# Create a bar plot
+barplot(subject_marks, 
+        names.arg = c("Subject1", "Subject2", "Subject3", "Subject4", "Subject5"),
+        col = "skyblue",
+        main = "Subject Marks",
+        xlab = "Subjects",
+        ylab = "Marks",
+        ylim = c(0, 100)
+)
+
+# Add values on top of the bars
+text(seq_along(subject_marks), subject_marks + 2, labels = subject_marks, col = "black", pos = 3, cex = 0.8)
