@@ -1,0 +1,13 @@
+#CSV
+Name,Age,Location
+John,25,New York
+Alice,30,Los Angeles
+Bob,22,Chicago
+#R
+# Read the CSV file
+file_path <- "example.csv"  # Replace with the path to your CSV file
+data <- read.csv(file_path)
+
+# Display the content of the CSV file
+cat("CSV File Content:\n")
+print(data)
