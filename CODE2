@@ -1,0 +1,20 @@
+# Function to get details of objects in memory
+getMemoryDetails <- function() {
+  # Get the names of objects in the workspace
+  object_names <- ls()
+
+  # Display details for each object
+  cat("Object Details:\n")
+  for (object_name in object_names) {
+    object_size <- object.size(get(object_name))
+    cat(sprintf("  %-20s %s\n", object_name, format(object_size, units = "auto")))
+  }
+}
+
+# Create some example objects (you can modify this part based on your actual objects)
+example_vector <- 1:100
+example_matrix <- matrix(1:100, nrow = 10, ncol = 10)
+example_data_frame <- data.frame(Name = c("Alice", "Bob", "Charlie"), Age = c(25, 30, 22))
+
+# Display details of objects in memory
+getMemoryDetails()
