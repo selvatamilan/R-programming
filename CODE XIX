@@ -1,0 +1,15 @@
+# Create vectors, matrices, and a function
+vector_element <- c(1, 2, 3, 4)
+matrix_element <- matrix(5:12, nrow = 2, ncol = 4)
+function_element <- function(x) x^2
+
+# Create a list with the elements
+my_list <- list(
+  vector = vector_element,
+  matrix = matrix_element,
+  function = function_element
+)
+
+# Display the content of the list
+cat("List Content:\n")
+print(my_list)
