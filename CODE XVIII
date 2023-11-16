@@ -1,0 +1,13 @@
+# Create two vectors for input
+vector1 <- c(1, 2, 3, 4, 5, 6)
+vector2 <- c(7, 8, 9, 10, 11, 12)
+
+# Combine the vectors into a matrix
+matrix_input <- cbind(vector1, vector2)
+
+# Create the three-dimensional array
+my_array <- array(matrix_input, dim = c(3, 3, 2))
+
+# Display the array
+cat("Three-Dimensional Array:\n")
+print(my_array)
